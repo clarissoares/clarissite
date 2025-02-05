@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Operações com Conjuntos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal">
+
+  <header class="bg-green-500 text-white text-center p-6">
+    <h1 class="text-2xl sm:text-3xl">Simulador de Operações com Conjuntos</h1>
+  </header>
+
+  <section class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
+    <h3 class="text-xl font-semibold mb-4">Defina os conjuntos</h3>
+    <div class="space-y-4">
+      <div>
+        <label for="setA" class="block text-gray-700">Conjunto A:</label>
+        <input type="text" id="setA" placeholder="Ex: 1, 2, 3, 4" class="w-full p-2 border border-gray-300 rounded-md">
+      </div>
+      <div>
+        <label for="setB" class="block text-gray-700">Conjunto B:</label>
+        <input type="text" id="setB" placeholder="Ex: 3, 4, 5, 6" class="w-full p-2 border border-gray-300 rounded-md">
+      </div>
+    </div>
+
+    <h3 class="text-xl font-semibold mt-6 mb-4">Escolha a operação</h3>
+    <div>
+      <select id="operation" class="w-full p-2 border border-gray-300 rounded-md">
+        <option value="union">União</option>
+        <option value="intersection">Interseção</option>
+        <option value="difference">Diferença</option>
+        <option value="symmetricDifference">Diferença Simétrica</option>
+      </select>
+    </div>
+
+    <button id="calculate" class="w-full mt-6 p-3 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600">
+      Calcular
+    </button>
+  </section>
+
+  <section class="max-w-4xl mx-auto p-6 mt-6 bg-white shadow-lg rounded-lg">
+    <h3 class="text-xl font-semibold">Resultado</h3>
+    <div id="result" class="mt-4 p-4 bg-gray-100 border border-gray-300 rounded-md text-lg"></div>
+  </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <footer class="text-center p-4 mt-8 bg-gray-800 text-white">
+    <p>Desenvolvido por MARIA CLARA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
